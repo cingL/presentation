@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AdDemo</string>
+    <string name="banner">banner</string>
+    <string name="interstitial">interstitial</string>
+    <string name="nativeexpress">NativeExpress</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="interstitial_ad">interstitialAd</string>
+</resources>

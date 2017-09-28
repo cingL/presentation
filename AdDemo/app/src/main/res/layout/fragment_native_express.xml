@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.ching.addemo.fragment.NativeExpressFragment">
+
+
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/nativeAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        ads:adSize="320x300"
+        ads:adUnitId="ca-app-pub-3940256099942544/2177258514" />
+
+</RelativeLayout>
