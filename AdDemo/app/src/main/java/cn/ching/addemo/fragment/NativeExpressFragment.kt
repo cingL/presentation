@@ -33,20 +33,20 @@ class NativeExpressFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         //video setting
-        nAdView?.videoOptions = VideoOptions.Builder().setStartMuted(true).build()
-        nAdView?.videoController?.videoLifecycleCallbacks = object : VideoController.VideoLifecycleCallbacks() {
-            override fun onVideoEnd() {
-                Log.d("TAG", "Video playback is finished.")
-            }
-        }
-        nAdView?.adListener = object : AdListener(){
-            override fun onAdLoaded() {
-                if (nAdView?.videoController!!.hasVideoContent())
-                    Log.d("TAG", "Received an ad that contains a video asset.")
-                else
-                    Log.d("TAG", "Received an ad that does not contain a video asset.")
-            }
-        }
+//        nAdView?.videoOptions = VideoOptions.Builder().setStartMuted(true).build()
+//        nAdView?.videoController?.videoLifecycleCallbacks = object : VideoController.VideoLifecycleCallbacks() {
+//            override fun onVideoEnd() {
+//                Log.d("TAG", "Video playback is finished.")
+//            }
+//        }
+//        nAdView?.adListener = object : AdListener(){
+//            override fun onAdLoaded() {
+//                if (nAdView?.videoController!!.hasVideoContent())
+//                    Log.d("TAG", "Received an ad that contains a video asset.")
+//                else
+//                    Log.d("TAG", "Received an ad that does not contain a video asset.")
+//            }
+//        }
 
         nAdView?.loadAd(createAdRequest())
 
